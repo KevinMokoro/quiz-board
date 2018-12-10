@@ -14,7 +14,5 @@ $(document).ready(function() {
     var result = total(inventor, telephone, relativity, art, technology);
     $("#output").text(result);
     $(".panel").hide();
-    //event.preventDefault()
-    //alert(result);
   });
 });
