@@ -7,90 +7,91 @@
   <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
   <link href="css/styles.css" rel="stylesheet" type="text/css">
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-  <script src="js/scipts.js"></script>
+  <script src="js/scripts.js"></script>
   <title>Quiz-Board</title>
 </head>
 
 <body>
-  <h1>Sample Questions</h1>
-  <h2>Answer the following questions by selecting one of the given choices</h2>
-  <p>1.Who invented alternating current?</p>
-
-  <div class="radio">
-    <label>
-      <input type="radio" name="inventor" value="Thomas Edison" checked>
-      Thomas Edison
-    </label>
-  </div>
-  <div class="radio">
-    <label>
-      <input type="radio" name="inventor" value="Nikola Tesla">
-      Nikola Tesla
-    </label>
-  </div>
-  <div class="radio">
-    <label>
-      <input type="radio" name="inventor" value="Wright brothers">
-      Wright brothers
-    </label>
-  </div>
-  <p>2.Who is credited for being the first to patent the first telephone?</p>
-
-  <div class="radio">
-    <label>
-      <input type="radio" name="inventor" value="Albert Einstein" checked>
-      Albert Einstein
-    </label>
-  </div>
-  <div class="radio">
-    <label>
-      <input type="radio" name="inventor" value="Steve Jobs">
-      Steve Jobs
-    </label>
-  </div>
-  <div class="radio">
-    <label>
-      <input type="radio" name="inventor" value="Graham Bell">
-      Graham Bell
-    </label>
-  </div>
-  <p>3.Who among the following developed the theory of relativity?</p>
-
-   <div class="radio">
-     <label>
-       <input type="radio" name="inventor" value="Stephen Hawking" checked>
-       Stephen Hawking
-     </label>
-   </div>
-   <div class="radio">
-     <label>
-       <input type="radio" name="inventor" value="Albert Einstein">
-       Albert Einstein
-     </label>
-   </div>
-   <div class="radio">
-     <label>
-       <input type="radio" name="inventor" value="Isaac Newton">
-       Isaac Newton
-     </label>
-   </div>
-   <p>4.Who among the following painted the famous Mona Lisa portrait.?</p>
+  <div class="container">
+    <h1>Sample Questions</h1>
+    <h2>Answer the following questions by selecting one of the given choices</h2>
+    <p>1.Who invented alternating current?</p>
+    <div id="score">
+      <div class="radio">
+        <label>
+          <input type="radio" name="inventor" value="0">
+          Thomas Edison
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="inventor" value="20">
+          Nikola Tesla
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="inventor" value="0">
+          Wright brothers
+        </label>
+      </div>
+      <p>2.Who is credited for being the first to patent the first telephone?</p>
 
       <div class="radio">
         <label>
-          <input type="radio" name="art" value="Pablo Picasso" checked>
+          <input type="radio" name="telephone" value="0">
+          Albert Einstein
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="telephone" value="0">
+          Steve Jobs
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="telephone" value="20">
+          Graham Bell
+        </label>
+      </div>
+      <p>3.Who among the following developed the theory of relativity?</p>
+
+      <div class="radio">
+        <label>
+          <input type="radio" name="relativity" value="0">
+          Stephen Hawking
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="relativity" value="20">
+          Albert Einstein
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="relativity" value="0">
+          Isaac Newton
+        </label>
+      </div>
+      <p>4.Who among the following painted the famous Mona Lisa portrait.?</p>
+
+      <div class="radio">
+        <label>
+          <input type="radio" name="art" value="0">
           Pablo Picasso
         </label>
       </div>
       <div class="radio">
         <label>
-          <input type="radio" name="art" value="Vincent van Gogh">
+          <input type="radio" name="art" value="0">
           Vincent van Gogh
         </label>
       </div>
       <div class="radio">
         <label>
-          <input type="radio" name="art" value="Leonardo da Vinci">
+          <input type="radio" name="art" value="20">
           Leonardo da Vinci
         </label>
       </div>
@@ -98,22 +99,28 @@
 
       <div class="radio">
         <label>
-          <input type="radio" name="technology" value="Tim Cook" checked>
+          <input type="radio" name="technology" value="0">
           Tim Cook
         </label>
       </div>
       <div class="radio">
         <label>
-          <input type="radio" name="technology" value="Jeff Bezos">
+          <input type="radio" name="technology" value="0">
           Jeff Bezos
         </label>
       </div>
       <div class="radio">
         <label>
-          <input type="radio" name="technology" value="Elon Musk">
+          <input type="radio" name="technology" value="20">
           Elon Musk
         </label>
       </div>
+      <button type="button" id="btn">Submit</button>
+
+    </div>
+
+    <div id="output"> </div>
+  </div>
 </body>
 
 </html>
