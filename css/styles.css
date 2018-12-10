@@ -1,3 +1,15 @@
 .score{
   display: none;
 }
+body{
+  background-image: url(../css/images/genius.jpg);
+}
+.score{
+  color: white;
+}
+#btn{
+  color: blue;
+  font-size: bold;
+  padding: 30px;
+  float: right;
+}
