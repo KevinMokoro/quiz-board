@@ -10,7 +10,6 @@ KEVIN MOKORO
 
 ### Technologies Used
 In developing this site the following were used:
-
 -   HTML
 -   CSS
 -   JAVASCRIPT
