@@ -5,7 +5,7 @@ var total = function(inventor, telephone, relativity, art, technology) {
 
 $(document).ready(function() {
   $("button#btn").click(function() {
-
+   $(".score").show();
     var inventor = parseInt($("input:radio[name=inventor]:checked").val());
     var telephone = parseInt($("input:radio[name=telephone]:checked").val());
     var relativity = parseInt($("input:radio[name=relativity]:checked").val());
@@ -13,6 +13,7 @@ $(document).ready(function() {
     var technology = parseInt($("input:radio[name=technology]:checked").val());
     var result = total(inventor, telephone, relativity, art, technology);
     $("#output").text(result);
+    $(".panel").hide();
     //event.preventDefault()
     //alert(result);
   });
